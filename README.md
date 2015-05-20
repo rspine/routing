@@ -1,6 +1,6 @@
 # Spine::Routing
 
-[![Gem Version](http://img.shields.io/gem/v/spine-routing.svg)][gem]
+[![Gem Version](https://badge.fury.io/rb/spine-routing.svg)](http://badge.fury.io/rb/spine-routing)
 [![Dependency Status](https://gemnasium.com/rspine/routing.svg)](https://gemnasium.com/rspine/routing)
 [![Code Climate](https://codeclimate.com/github/rspine/routing/badges/gpa.svg)](https://codeclimate.com/github/rspine/routing)
 [ ![Codeship Status for rspine/routing](https://codeship.com/projects/f340c940-e121-0132-7351-0acdf541758b/status?branch=master)](https://codeship.com/projects/81073)
