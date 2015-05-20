@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["support@toggl.com"]
   spec.summary       = 'Rack router'
   spec.description   = ''
-  spec.homepage      = ''
+  spec.homepage      = 'https://github.com/rspine/routing'
   spec.license       = 'BSD-3-Clause'
 
   spec.files         = `git ls-files -z`.split("\x0")
