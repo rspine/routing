@@ -9,5 +9,7 @@ module Spine
       autoload :Verbs, 'spine/routing/syntax/verbs'
       autoload :Namespacing, 'spine/routing/syntax/namespacing'
     end
+
+    autoload :Engine, 'spine/routing/engine'
   end
 end
