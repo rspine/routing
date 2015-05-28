@@ -1,6 +1,10 @@
 Changelog
 =========
 
+0.3.0
+-----
+-   Merges all parameters to Rack environment
+
 0.2.0
 -----
 -   Adds Spine::Engines extension
