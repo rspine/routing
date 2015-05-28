@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    spine-routing (0.3.0)
+    spine-routing (0.3.1)
       rack (~> 1.6)
 
 GEM

@@ -1,6 +1,10 @@
 Changelog
 =========
 
+0.3.1
+-----
+-   Fixes specs.
+
 0.3.0
 -----
 -   Merges all parameters to Rack environment
