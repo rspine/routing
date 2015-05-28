@@ -10,6 +10,7 @@ module Spine
       autoload :Namespacing, 'spine/routing/syntax/namespacing'
     end
 
+    autoload :Parameters, 'spine/routing/parameters'
     autoload :Engine, 'spine/routing/engine'
   end
 end

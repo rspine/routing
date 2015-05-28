@@ -7,7 +7,7 @@ module Spine
 
       VERB = 'REQUEST_METHOD'.freeze
       PATH = 'PATH_INFO'.freeze
-      PATH_PARAMETERS = 'router.parameters'.freeze
+      PARAMETERS = 'router.parameters'.freeze
       NOT_FOUND_RESPONSE = [404, {}, ['']].freeze
 
 
@@ -44,7 +44,8 @@ module Spine
         verb = env[VERB].downcase.gsub('head', 'get').to_sym
         route = recognise(verb, env[PATH])
         if route
-          env[PATH_PARAMETERS] = route.parameters
+          env[PARAMETERS] = Rack::Request.new(env).params
+          env[PARAMETERS].merge!(route.parameters)
           run(route.app, env)
         else
           NOT_FOUND_RESPONSE # TODO: set default app

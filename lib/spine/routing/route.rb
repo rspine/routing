@@ -22,7 +22,7 @@ module Spine
         matches = path.match(regex)
         return nil unless matches
 
-        Match.new(self, Hash[matches.names.map(&:to_sym).zip(matches.captures)])
+        Match.new(self, Hash[matches.names.zip(matches.captures)])
       end
 
       private
