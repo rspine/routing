@@ -65,7 +65,7 @@ module Spine
           get('test', to: handler)
         end
         expect(subject.recognise(:get, '/level-1/1/test').parameters)
-          .to eql(level_id: '1', format: nil)
+          .to eql('level_id' => '1', 'format' => nil)
       end
 
       it 'parses variable scope' do
@@ -74,7 +74,7 @@ module Spine
           get('test', to: handler)
         end
         expect(subject.recognise(:get, '/1/test').parameters)
-          .to eql(level_id: '1', format: nil)
+          .to eql('level_id' => '1', 'format' => nil)
       end
     end
   end

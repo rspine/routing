@@ -45,7 +45,7 @@ module Spine
 
         it 'parses variable value' do
           expect(subject.match(:get, '/testing/1').parameters)
-            .to eql(id: '1', format: nil)
+            .to eql('id' => '1', 'format' => nil)
         end
       end
 
@@ -54,7 +54,7 @@ module Spine
 
         it 'parses values' do
           expect(subject.match(:get, '/testing/1').parameters)
-            .to eql(paths: 'testing/1', format: nil)
+            .to eql('paths' => 'testing/1', 'format' => nil)
         end
 
         describe 'and path variables' do
@@ -62,7 +62,7 @@ module Spine
 
           it 'parses values' do
             expect(subject.match(:get, '/testing/this/is/some/random/stuff/1').parameters)
-              .to eql(paths: 'this/is/some/random/stuff', action: 'testing', id: '1', format: nil)
+              .to eql('paths' => 'this/is/some/random/stuff', 'action' => 'testing', 'id' => '1', 'format' => nil)
           end
         end
 
@@ -71,7 +71,7 @@ module Spine
 
           it 'parses variables' do
             expect(subject.match(:get, '/testing/this/is/some/random/stuff/1').parameters)
-              .to eql(stuff: 'this/is/some/random/stuff', action: 'testing', id: '1', format: nil)
+              .to eql('stuff' => 'this/is/some/random/stuff', 'action' => 'testing', 'id' => '1', 'format' => nil)
           end
         end
 
@@ -80,7 +80,7 @@ module Spine
 
           it 'parses variables' do
             expect(subject.match(:get, '/testing/this/is/some/random/stuff').parameters)
-              .to eql(stuff: 'this/is/some/random/stuff', action: 'testing', format: nil)
+              .to eql('stuff' => 'this/is/some/random/stuff', 'action' => 'testing', 'format' => nil)
           end
         end
       end
