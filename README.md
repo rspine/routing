@@ -34,3 +34,6 @@ end
 
 router.call(env)
 ```
+
+For getting parameters use `env['router.parameters']` or include
+`Spine::Routing::Parameters` to your controller/action.
