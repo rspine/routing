@@ -1,6 +1,10 @@
 Changelog
 =========
 
+0.3.2
+-----
+-   Update Rack dependency
+
 0.3.1
 -----
 -   Fixes specs.
